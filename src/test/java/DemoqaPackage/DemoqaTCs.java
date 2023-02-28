@@ -306,8 +306,6 @@ public class DemoqaTCs extends DriverClass {
      */
     @Test(priority = 14)
     void moveTheSlider(){
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
         driver.get("https://demoqa.com/slider/");
         // Find the slider element and get its location
         WebElement slider = driver.findElement(By.className("range-slider"));
@@ -337,8 +335,6 @@ public class DemoqaTCs extends DriverClass {
      */
     @Test(priority = 15)
     void clickOnGivenPoint(){
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
         driver.get("https://demoqa.com/slider/");
         // Find the slider element and get its location
         WebElement slider = driver.findElement(By.className("range-slider"));
